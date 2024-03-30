@@ -1,0 +1,421 @@
+<!-- <section class="vh-100" style="background-color: #9A616D;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://media.istockphoto.com/id/1465188429/photo/business-performance-monitoring-concept-businessman-using-smartphone-online-survey-filling.jpg?s=612x612&w=0&k=20&c=7c47U-ZeTVL4H1_jPyO-8V3mKVPbeDb25oOxIV7NoEE="
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <ng-container *ngIf="!showRegister; else registrationForm">
+                  <form (ngSubmit)="submitLoginForm()" style="width: 100%;">
+
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                      <span class="h1 fw-bold mb-0">TodoList</span>
+                    </div>
+
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                    <div class="form-outline mb-4">
+                      <input type="email" [(ngModel)]="LoginFormData.Email" name="Email" id="form2Example17" class="form-control form-control-lg" />
+                      <label class="form-label" for="form2Example17">Email address</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="password" [(ngModel)]="LoginFormData.Password" name="Password" id="form2Example27" class="form-control form-control-lg" />
+                      <label class="form-label" for="form2Example27">Password</label>
+                    </div>
+
+                    <div class="pt-1 mb-4">
+                      <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
+                    </div>
+
+                    <a class="small text-muted" href="#!">Forgot password?</a>
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#" (click)="showRegister = true"
+                        style="color: #393f81;">Register here</a></p>
+                    <a href="#!" class="small text-muted">Terms of use.</a>
+                    <a href="#!" class="small text-muted">Privacy policy</a>
+                  </form>
+                </ng-container>
+
+                <ng-template #registrationForm>
+                  <div style="height: 540px; overflow-y: auto;">
+                    <form (ngSubmit)="submitRegisterForm()" style="width: 100%;">
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px; margin-bottom: 10px;">Register</h5>
+                      <div class="form-outline mb-6">
+                        <label class="form-label" for="formUsername">Username</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Username" name="Username" id="formUsername" class="form-control form-control-sl" />
+                      </div>
+
+                      <div class="form-outline mb-6">
+                        <label class="form-label" for="formFirstname">First Name</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Firstname" name="Firstname" id="formFirstname" class="form-control form-control-sl" />
+                      </div>
+
+                      <div class="form-outline mb-6">
+                        <label class="form-label" for="formLastname">Last Name</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Lastname" name="Lastname" id="formLastname" class="form-control form-control-sl" />
+                      </div>
+
+                      <div class="form-outline mb-6">
+                        <label class="form-label" for="formAge">Age</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Age" name="Age" id="formAge" class="form-control form-control-sl" />
+                      </div>
+
+                      <div class="form-outline mb-6">
+                        <label class="form-label" for="formEmail">Email</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Email" name="Email" id="formEmail" class="form-control form-control-sl" />
+                      </div>
+
+                      <div class="form-outline mb-6">
+                        <label class="form-label" for="formPassword">Password</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Password" name="Password" id="formPassword" class="form-control form-control-sl" />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="formConfirm_Password">Confirm Password</label>
+                        <input type="text" [(ngModel)]="RegisterFormData.Confirm_Password" name="Confirm_Password" id="formConfirm_Password" class="form-control form-control-sl" />
+                      </div>
+                      
+
+                      <div class="pt-1 mb-8">
+                        <button class="btn btn-dark btn-lg btn-block mb-2" type="submit">Register</button>
+                        <p class="mb-2 pb-sl" style="color: #393f81;">Click here to Login? <a href="#" (click)="showRegister = false"
+                          style="color: #393f81;">Login here</a></p>
+                      </div>
+                    </form>
+                  </div>
+                  <div *ngIf="showSuccessMessage" class="alert alert-success" role="alert">
+                    <p class="reg-success-msg">Registration successful!</p>
+                  </div>
+                  
+                  <div *ngIf="showFailureMessage">
+                    <p class="reg-failed-msg">Registration failed. Please try again.</p>
+                  </div>
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- #eee; -->
+<!-- <section class="vh-100" style="background-color: rgb(86, 84, 84)">
+  <div class="container h-75">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+
+                <form class="mx-1 mx-md-4">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="form3Example3c" class="form-control" />
+                      <label class="form-label" for="form3Example3c">Your Email</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" class="form-control" />
+                      <label class="form-label" for="form3Example4c">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg">Login</button>
+                  </div>
+                  <p class="mb-2 pb-lg" style="color: black;margin-left: 70px;font-weight: 500;">Click here to Register? <a href="#" (click)="showRegister = true"
+                    style="color: #393f81;">Register here</a></p>
+
+                </form>
+
+                <div *ngIf="showRegister">
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+                  <form class="mx-1 mx-md-4">
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="form3Example1c" class="form-control" />
+                        <label class="form-label" for="form3Example1c">Your Name</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="email" id="form3Example3c" class="form-control" />
+                        <label class="form-label" for="form3Example3c">Your Email</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="form3Example4c" class="form-control" />
+                        <label class="form-label" for="form3Example4c">Password</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="form3Example4cd" class="form-control" />
+                        <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                      </div>
+                    </div>
+  
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in <a href="#!">Terms of service</a>
+                      </label>
+                    </div>
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="button" class="btn btn-primary btn-lg">Register</button>
+                    </div>
+                    <p class="mb-2 pb-lg" style="color: black;margin-left: 70px;font-weight: 500;">Click here to Login? <a href="#" (click)="showRegister = false"
+                      style="color: #393f81;">Login here</a></p>
+  
+                  </form>
+                </div>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                  class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="vh-100" style="background-color: rgb(86, 84, 84)">
+  <div class="container h-75">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <ng-container *ngIf="!showRegister; else registrationForm">
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login Page</p>
+                  <form class="mx-1 mx-md-4" (ngSubmit)="submitLoginForm()">
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="email" id="email" class="form-control" [(ngModel)]="LoginFormData.Email" name="Email" />
+                        <label class="form-label" for="email">Your Email</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="password" class="form-control" [(ngModel)]="LoginFormData.Password" name="Password" />
+                        <label class="form-label" for="password">Password</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                    </div>
+                  </form>
+                  <p class="mb-2 pb-lg" style="color: black;margin-left: 70px;font-weight: 500;">Click here to Register? <a href="#" (click)="showRegister = true"
+                      style="color: #393f81;">Register here</a></p>
+                </ng-container>
+
+                <ng-template #registrationForm>
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+                  <form class="mx-1 mx-md-4" (ngSubmit)="submitRegisterForm()">
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="form3Example1c" class="form-control" [(ngModel)]="RegisterFormData.Name" name="Name" />
+                        <label class="form-label" for="form3Example1c">Your Name</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="email" id="form3Example3c" class="form-control" [(ngModel)]="RegisterFormData.Email" name="Email"  />
+                        <label class="form-label" for="form3Example3c">Your Email</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="form3Example4c" class="form-control" [(ngModel)]="RegisterFormData.Password" name="Password" />
+                        <label class="form-label" for="form3Example4c">Password</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="password" id="form3Example4cd" class="form-control" [(ngModel)]="RegisterFormData.Confirm_Password" name="Confirm_Password" />
+                        <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                      </div>
+                    </div>
+  
+                    <!-- <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in <a href="#!">Terms of service</a>
+                      </label>
+                    </div> -->
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                    </div>
+                  </form>
+                  <p class="mb-2 pb-lg" style="color: black;margin-left: 70px;font-weight: 500;">Click here to Login? <a href="#" (click)="showRegister = false"
+                      style="color: #393f81;">Login here</a></p>
+                  
+                  <!-- <div *ngIf="showFailureMessage">
+                    <p class="reg-failed-msg">Registration failed. Please try again.</p>
+                  </div> -->
+                </ng-template>
+                <div *ngIf="showSuccessMessage" class="alert alert-success" role="alert">
+                  <p class="reg-success-msg">Registration successful!</p>
+                </div>
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                  class="img-fluid" alt="Sample image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Registration Form -->
+ <!-- <form (ngSubmit)="submitRegistrationForm()">
+  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create an account</h5>
+  <div class="form-outline mb-4">
+    <input type="text" [(ngModel)]="RegistrationFormData.Username" name="Username" id="username" class="form-control form-control-lg" />
+    <label class="form-label" for="username">Username</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="text" [(ngModel)]="RegistrationFormData.Firstname" name="Firstname" id="firstname" class="form-control form-control-lg" />
+    <label class="form-label" for="firstname">First name</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="text" [(ngModel)]="RegistrationFormData.Lastname" name="Lastname" id="lastname" class="form-control form-control-lg" />
+    <label class="form-label" for="lastname">Last name</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="number" [(ngModel)]="RegistrationFormData.Age" name="Age" id="age" class="form-control form-control-lg" />
+    <label class="form-label" for="age">Age</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="email" [(ngModel)]="RegistrationFormData.Email" name="Email" id="email" class="form-control form-control-lg" />
+    <label class="form-label" for="email">Email address</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="password" [(ngModel)]="RegistrationFormData.Password" name="Password" id="password" class="form-control form-control-lg" />
+    <label class="form-label" for="password">Password</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="password" [(ngModel)]="RegistrationFormData.Confirm_Password" name="Confirm_Password" id="confirmPassword" class="form-control form-control-lg" />
+    <label class="form-label" for="confirmPassword">Confirm Password</label>
+  </div>
+  <div class="pt-1 mb-4">
+    <button class="btn btn-dark btn-lg btn-block" type="submit">Register</button>
+  </div>
+</form> -->
+
+
+
+
+<!-- mycode -->
+
+
+<!-- <div class="main-container">
+  <div class="left-container">
+    <img src="assets/todolist.jpg" alt="todolist" class="todolist-icon">
+    <div class="description">
+      <h1>Start Your Productivity Journey with TodoList</h1>
+      <p class="left-para">
+        Ready to boost your productivity? TodoList is here to help. 
+        Sign up or log in now to start planning, organizing, and accomplishing your goals with ease.
+      </p>
+    </div>
+  </div>
+  <div class="right-container">
+    <h1>TodoList Creation</h1>
+    <div class="buttons">
+      <button class="reg-btn" (click)="showRegisterForm()">Register</button>
+      <button class="login-btn" (click)="showLoginForm()">Login</button>
+    </div>
+
+    <div *ngIf="showRegister" class="reg-formData">
+      <form (ngSubmit)="submitRegisterForm()">
+        <button class="close-btn-reg" (click)="closeRegisterForm()">X</button>
+        <input type="text" [(ngModel)]="RegisterFormData.Username" name="Username" placeholder="Username"><br><br>
+        <input type="text" [(ngModel)]="RegisterFormData.Firstname" name="Firstname" placeholder="Firstname"><br><br>
+        <input type="text" [(ngModel)]="RegisterFormData.Lastname" name="Lastname" placeholder="Lastname"><br><br>
+        <input type="number" [(ngModel)]="RegisterFormData.Age" name="Age" placeholder="Age"><br><br>
+        <input type="email" [(ngModel)]="RegisterFormData.Email" name="Email" placeholder="Email"><br><br>
+        <input type="password" [(ngModel)]="RegisterFormData.Password" name="Password" placeholder="Password"><br><br>
+        <input type="password" [(ngModel)]="RegisterFormData.Confirm_Password" name="Confirm_Password" placeholder="Confirm Password"><br><br>
+        <button type="submit" class="reg-btn-submit">Submit</button>
+      </form><br>
+
+      <div *ngIf="showSuccessMessage">
+        <p class="reg-success-msg">Registration successful!</p>
+      </div><br>
+      
+      <div *ngIf="showFailureMessage">
+        <p class="reg-failed-msg">Registration failed. Please try again.</p>
+      </div><br>
+
+    </div>  
+
+    <div *ngIf="showLogin" class="login-formData">
+      <form (ngSubmit)="submitLoginForm()">
+        <button class="close-btn-login" (click)="closeLoginForm()">X</button>
+        <input type="text" [(ngModel)]="LoginFormData.Username" name="Username" placeholder="Username"><br><br>
+        <input type="password" [(ngModel)]="LoginFormData.Password" name="Password" placeholder="Password"><br><br>
+        <button type="submit" class="login-btn-submit">Login</button>
+      </form><br><br>
+    </div>
+
+  </div>
+  <div class="footer">
+    <footer>
+      <p>Copyright &copy; 2024 This website created by <a href="https://github.com/kjonnalagadda" target="_blank">John Jonnalagadda</a></p>
+    </footer>
+  </div>
+</div>
+ -->
