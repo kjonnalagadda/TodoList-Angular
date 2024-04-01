@@ -1,6 +1,6 @@
 import { Injectable, PLATFORM_ID, Inject, NgModule } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common'; // Import isPlatformBrowser
-import { Observable } from 'rxjs';
+import { of,Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -42,34 +42,17 @@ export class ServiceService {
     }
   }
 
+  // isAuthenticatedUser(): boolean {
+  //   return localStorage.getItem(this.AUTH_KEY) === 'true';
+  //   // console.log(localStorage.getItem(this.AUTH_KEY) === 'true', 'debuuger one');
+  // }
+
   isAuthenticatedUser(): boolean {
     if (isPlatformBrowser(this.platformId)) {
       return localStorage.getItem(this.AUTH_KEY) === 'true';
     }
-    return false;
+    return false; // Return false if not running in the browser
   }
 
-  // GET request to fetch data by ID
-  // getDataById(id: number): Observable<any> {
-  //   return this.http.get<any>(this.mainURL + id);
-  // }
-
-  // updateData(id: number, formData: any): Observable<any> {
-  //   return this.http.put<any>(this.mainURL+'userlogin/' + id, formData);
-  // }
 
 }
-
-// setToken(token: string) : void{
-  //   localStorage.setItem('token', token);
-  // }
-
-  // getToken(): string | null{
-  //   return localStorage.getItem('token');
-  // }
-
-
-// @Injectable({
-//   providedIn: 'root',
-// })
-

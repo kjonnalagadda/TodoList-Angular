@@ -13,4 +13,5 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 })
 export class AppComponent {
   title = 'my-angular-app';
+  
 }

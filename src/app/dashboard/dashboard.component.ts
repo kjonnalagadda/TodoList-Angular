@@ -15,7 +15,6 @@ export class DashboardComponent {
   constructor(private apiService: ServiceService, private router: Router){}
 
   logOut(): void {
-      // Perform logout logic
       this.apiService.logout();
       this.router.navigate(['/login']);
     }
