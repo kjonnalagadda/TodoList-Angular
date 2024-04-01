@@ -15,6 +15,8 @@ export class HelloComponent{
 
   constructor(private apiService: ServiceService, private router: Router){}
 
+  loginError: boolean = false; // Initialize it to false initially
+
   showLogin: any = false;
   showRegister: any = false;
 
@@ -58,6 +60,8 @@ export class HelloComponent{
           this.router.navigateByUrl('/dashboard');
           console.log(response.Result, 'login');
         } else {
+            // Set loginError to true when login fails
+          this.loginError = true;
           console.log('Login failed:', response.Message); 
         }
       },
