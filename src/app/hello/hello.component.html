@@ -25,13 +25,19 @@
                         <label class="form-label" for="password">Password</label>
                       </div>
                     </div>
-  
+
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                       <button type="submit" class="btn btn-primary btn-lg">Login</button>
                     </div>
                   </form>
                   <p class="mb-2 pb-lg" style="color: black;margin-left: 70px;font-weight: 500;">Click here to Register? <a href="#" (click)="showRegister = true"
                       style="color: #393f81;">Register here</a></p>
+
+                  <!-- Error Message -->
+                  <!-- <div class="alert alert-danger d-none" role="alert" *ngIf="loginError">
+                    Login failed. Please check your credentials and try again.
+                  </div> -->
+
                 </ng-container>
 
                 <ng-template #registrationForm>
